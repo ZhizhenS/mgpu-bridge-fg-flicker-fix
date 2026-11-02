@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-这是 [MGPU Bridge](https://github.com/maohgad-web/Neural-coprocessor) 的一个补丁，基于 [davidm71 的分支](https://github.com/davidm71/Neural-coprocessor)（commit `c40734d`，source `DG3`）。已向原分支提交 [PR #1](https://github.com/davidm71/Neural-coprocessor/pull/1)。它解决两类问题：
+这是 [MGPU Bridge](https://github.com/maohgad-web/Neural-coprocessor) 的一个补丁，基于 [davidm71 的分支](https://github.com/davidm71/Neural-coprocessor)（commit `c40734d`，source `DG3`）。已向 davidm71 的分支提交 [PR #1](https://github.com/davidm71/Neural-coprocessor/pull/1)，并向 MGPU Bridge 原版提交了移植版 [PR #76](https://github.com/maohgad-web/Neural-coprocessor/pull/76)（只编译过，未实际运行，详情见 [Issue #75](https://github.com/maohgad-web/Neural-coprocessor/issues/75)）。它解决两类问题：
 
 - 开启帧生成后，游戏在前台时画面上出现**闪烁的黑色横条**，插件面板也会横向闪烁。
 - 插件面板的小光标有时**动不了**，关闭面板后还会**留在屏幕上**。
@@ -109,3 +109,5 @@ git am --keep-cr patches/bb1-on-davidm71-c40734d.patch
 MGPU Bridge 的作者是 Marcelo Guibout，采用 MIT 许可，分支由 davidm71 维护。本补丁沿用相同的许可，见 [LICENSE](LICENSE)。
 
 问题定位和补丁是在 [Claude Code](https://claude.com/claude-code) 的协助下完成的。
+
+如果这个修复帮到了你，欢迎点个 Star，也欢迎提 Issue 反馈你的显卡和游戏上的测试结果。

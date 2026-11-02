@@ -2,7 +2,7 @@
 
 [中文](README.md)
 
-A patch for [MGPU Bridge](https://github.com/maohgad-web/Neural-coprocessor), based on [davidm71's fork](https://github.com/davidm71/Neural-coprocessor) at commit `c40734d` (source `DG3`). Submitted to that fork as [PR #1](https://github.com/davidm71/Neural-coprocessor/pull/1). It fixes:
+A patch for [MGPU Bridge](https://github.com/maohgad-web/Neural-coprocessor), based on [davidm71's fork](https://github.com/davidm71/Neural-coprocessor) at commit `c40734d` (source `DG3`). Submitted to that fork as [PR #1](https://github.com/davidm71/Neural-coprocessor/pull/1), and to MGPU Bridge itself as a port in [PR #76](https://github.com/maohgad-web/Neural-coprocessor/pull/76) (built, not run; see [issue #75](https://github.com/maohgad-web/Neural-coprocessor/issues/75)). It fixes:
 
 - **Flickering dark horizontal bands** over the picture with frame generation on while the game is focused, and horizontal flicker over the add-on's panel.
 - A panel pointer that **sometimes does not move**, and that **stays on screen** after the panel closes.
@@ -109,3 +109,5 @@ That CI currently fails its own guard, because `src/gputime.cpp:217` uses `GetCl
 MGPU Bridge is by Marcelo Guibout under the MIT license, with the fork maintained by davidm71. This patch uses the same license; see [LICENSE](LICENSE).
 
 Diagnosis and patch were done with the help of [Claude Code](https://claude.com/claude-code).
+
+If this fix helped, a star is welcome, and so is an issue with your results on other GPUs and games.
